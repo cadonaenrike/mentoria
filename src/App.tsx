@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import About from "./components/About/About";
 import Card from "./components/Cards/Cards";
 import navigation from "./config/navigation";
@@ -14,7 +14,7 @@ function App() {
     }
   }, [showAbout]);
 
-  const handleCardClick = (personagem, backgroundColor) => {
+  const handleCardClick = (personagem: string, backgroundColor: string) => {
     setSelectedPersonagem(personagem);
     setShowAbout(true);
     setBodyBackground(backgroundColor);
